@@ -1,6 +1,6 @@
 package capitulo_7;
 
-public class Veiculo {
+public abstract class Veiculo {
     private String marca;
     private Integer ano;
     private Double valor; 
@@ -16,6 +16,8 @@ public class Veiculo {
         this.ano = ano;
         this.valor = valor;
     }
+    
+    public abstract double calcularIPVA();
    
     public String getMarca() {
         return marca;

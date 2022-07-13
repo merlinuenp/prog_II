@@ -5,11 +5,11 @@ package capitulo_7;
 import java.time.LocalDate;
 
 public class Caminhao extends Veiculo {
-    private Integer capacidadeCarga; 
+    private Integer capacidadeCarga;  
     
     public Caminhao(){
         super();
-        this.capacidadeCarga = 0; 
+        this.capacidadeCarga = 0;  
     }
 
     public Caminhao(Integer capacidadeCarga) {
@@ -22,6 +22,7 @@ public class Caminhao extends Veiculo {
         this.capacidadeCarga = capacidade; 
     }
        
+    
     public double calcularIPVA(){
         if (LocalDate.now().getYear() - this.getAno() > 20){
             return 0.0; 
@@ -38,6 +39,8 @@ public class Caminhao extends Veiculo {
     public void setCapacidadeCarga(Integer capacidadeCarga) {
         this.capacidadeCarga = capacidadeCarga;
     }
+    
+ 
     
     
     
